@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AV College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('http://www.avcollege.in/IMG-20201109-WA0015.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .college-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .college-header img {
+            height: 120px; /* Large logo */
+            margin-right: 15px;
+        }
+        .college-name {
+            font-size: 3.5rem; /* Bigger College Name */
+            font-weight: bold;
+            color: #ffc107;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .hero-section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 120px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ffc107;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+        .content-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 10px;
+            margin: 30px;
+        }
+        .content-section h2 {
+            color: #ffc107;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #ffc107;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn-custom:hover {
+            background-color: #ffeb3b;
+            color: black;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- College Logo and Name Section (Top Left) -->
+    <div class="college-header">
+        <img src="http://www.avcollege.in/images/logo1.jpg" alt="AV College Logo">
+        <div class="college-name">AV COLLEGE OF ARTS, SCIENCE & COMMERCE</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a> <!-- Removed Small Name -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to AV College</h1>
+            <p>Empowerment Through Pursuit of Excellence</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Established in 1968, AV College of Arts, Science & Commerce is affiliated with Osmania University and accredited with a 'B++' Grade by NAAC (3rd Cycle). The college offers a range of undergraduate and postgraduate programs across various disciplines, aiming to provide quality education and foster holistic development.</p>
+            <p>Located in the heart of Hyderabad, the college boasts a sprawling campus with state-of-the-art infrastructure, well-equipped laboratories, a comprehensive library, and sports facilities. The dedicated faculty members are committed to nurturing students' academic and personal growth, preparing them for successful careers and responsible citizenship.</p>
+            <p>Over the years, AV College has achieved numerous accolades and has been recognized for its contributions to higher education. The institution continually strives for excellence, adapting to the evolving educational landscape to meet the needs of its students and society.</p>
+        </div>
+    </section>
+
+    <!-- Back to Home Button -->
+    <div class="container text-center">
+        <a href="{% url 'index' %}" class="btn-custom">Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AV College of Arts, Science & Commerce. All rights reserved.</p>
+            <p>Contact us: avcollege@gmail.com | Phone: 27637751, 27610241</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
